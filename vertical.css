@@ -1,0 +1,11 @@
+/* Separate vertical comparison. The original flowchart stays unchanged. */
+main{max-width:900px}
+.flowchart{display:flex;flex-direction:column;gap:96px;max-width:820px;margin-inline:auto;padding-bottom:64px}
+.node-heading h2{font-size:24px}
+.detail{font-size:12px;margin:11px 0 19px}
+.number{width:29px;height:29px;font-size:11px}
+.type{font-size:9px}
+.join-note{display:none}
+.intro{padding-bottom:52px}
+@media(max-width:580px){.flowchart{gap:74px}.node-heading h2{font-size:21px}.detail{font-size:11px}.intro{padding-bottom:36px}}
+@media print{@page{size:A3 portrait;margin:15mm}.node{break-inside:avoid}.flowchart{gap:72px}}
